@@ -1,0 +1,56 @@
+Notes that I will be using on Anki.
+
+ What is an Algorithm?
+ - An algorithm is a set of well-defined instructions to solve a particular problem
+ - It is a set of step-by-step instructions or rules to solve a specific problem or perform a task. It is like a recipe that guides you on how to accomplish something. 
+
+ Example: 
+
+ We are making a peanut butter and jelly sandwich..
+
+ 1st step: 
+ Gather the ingredients. Collect bread, peanut butter, and then the jelly.
+
+ 2nd step: 
+ Spread the peanut butter. Take two slices of bread and spread the peanut butter on one slice.
+
+ 3rd step: 
+ Spread the jelly. Spread jelly on the other slice of the bread.
+
+ 4th step: 
+ Combine both the slices. Put the slice with peanut butter on the top of the slice bread with jelly.
+
+ 5th step: 
+ Serve the sandwich. Your peanut butter and jelly sandwich are ready to eat.
+
+ In the example above, each step of the algorithm tells you exactly what to do in order to make the sandwich. Algorithms are used in a lot of field such as mathematics, computer science, cooking and even on your daily life to solve problems efficiently and consistently.
+ 
+NOTE: 
+An algorithm should be well defined inputs and outputs.
+Each of the step in algorithm should be clear and unabiguous.
+Every algorithm comes with its own tradeoffs when it comes to performance. (Time complexity and Space complexity).
+
+!! There are multiple ways to solve one problem !!
+
+Time Complexity - It is a measure of how the runtime of an algorithms grows as the size of its input increases. It helps us understand how the performance of an algorithm scales with larger input data.
+
+Constant Time Complexity O(1):
+The algorithm's runtime remains constant, regardless of the size of the input. 
+
+Logarithmic Time Complexity O(log n):
+The algorithm's runtime increases linearly with the size of the input.
+
+Linear Time Complexity O(n):
+The algorithm's runtime increases linearly with the size of  the input.
+
+Linearithmic Time Complexity O(n log n):
+The algorithm's runtime increases in proportion to n times the logarithm of n. 
+
+Quadratic Time Complexity (O(n^2)): 
+The algorithm's runtime increases quadratically with the size of the input.
+
+Exponential Time Complexity (O(2^n)): 
+The algorithm's runtime increases exponentially with the size of the input.
+
+Factorial Time Complexity (O(n!)): 
+The algorithm's runtime increases factorial with the size of the input.
