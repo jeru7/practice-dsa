@@ -19,4 +19,4 @@ function isPrime(num) {
 
 console.log(isPrime(1))
 
-// The time complexity is O(n)
+// The time complexity is O(sqrt(n))
