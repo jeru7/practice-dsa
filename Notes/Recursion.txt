@@ -1,0 +1,12 @@
+Notes that I will be using on Anki.
+
+What is Recursion?
+- Recursion is a programming technique where a function calls itself in order to solve a problem. 
+- It is a problem solving technique where the solution depends on solutions to smaller instances of the same problem.
+
+Base Case
+- Every recursive solution needs to have a base case.
+- This is the condition that stops the recursive calls. It's like the exit condition that prevents the function from calling itself indefinitely.
+
+NOTE: 
+Recursion might simplify solving a problem but it does not always translate to a faster solution. A recursive solution may be far worse compared to an iterative solution.
