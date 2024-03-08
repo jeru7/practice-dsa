@@ -1,0 +1,57 @@
+Notes that I will be using on Anki.
+
+What is Search Algorithms?
+- Search algorithms are algorithms used to locate specific items within a collection of data. They are fundamental in computer science and are employed in various applications such as databases, information retrieval systems, and artificial intelligence.
+- Search algorithms operate on different types of data structures, such as arrays, linked lists, graphs, and has tables, depending on the nature of the data and the requirements of the problem.
+
+Here are some common types of search algorithms:
+
+Linear Search:
+Also known as sequential search, this algorithm iterates through each element of the data structure to find the target item. It's straightforward but can be slow for large datasets.
+
+Binary Search: 
+This algorithm works on sorted arrays and divides the search space in half with each iteration, making it much more efficient than linear search. It's commonly used for searching in sorted lists or arrays.
+
+Depth-First Search (DFS): 
+DFS is a graph traversal algorithm that explores as far as possible along each branch before backtracking. It's often used in maze solving, topological sorting, and cycle detection.
+
+Breadth-First Search (BFS):
+BFS is another graph traversal algorithm that explores all the neighbor nodes at the present depth before moving on to the nodes at the next depth level. It's commonly used in shortest path problems and network analysis.
+
+Hash Table Search:
+Hash tables provide fast search operations by using a hash function to map keys to indices in an array. Retrieval of an element from a hash table typically takes constant time on average, making it efficient for large datasets.
+
+A Search Algorithm*:
+A* is a pathfinding algorithm that finds the shortest path between two nodes in a graph, weighted graph, or grid. It uses a heuristic function to estimate the cost of reaching the goal from each node, guiding the search towards the most promising paths.
+
+Binary Search Tree (BST) Search:
+BSTs are binary trees where each node has at most two children, and the left child is less than the parent, while the right child is greater. Searching in a BST is efficient as it utilizes the tree's structure to quickly eliminate large portions of the search space.
+
+Key Considerations for Using Search Algorithms
+
+When using search algorithms, there are several important considerations to keep in mind to ensure their effective and efficient implementation:
+
+Choose the Right Data Structure:
+Pick the best structure for your data and problem.
+
+Sort Your Data if Needed:
+Some algorithms require sorted data to work effectively.
+
+Consider Data Size:
+Think about how many items you're searching through.
+
+Think about Efficiency:
+Choose algorithms that work quickly and use memory efficiently.
+
+Match Algorithm to Goal:
+Use the right algorithm for what you're looking for.
+
+Handle Special Cases:
+Account for unusual situations like empty data or duplicates.
+
+Look for Ways to Improve:
+Find ways to make your search faster or use less memory.
+
+Test Thoroughly: Make sure your algorithm works in all scenarios by testing with different data.
+
+In simple words, you need to pick the right tool for the job, make sure your data is organized if needed, consider how much data you have, use algorithms that work quickly, handle special cases, find ways to make things faster, and test to make sure everything works as expected.
