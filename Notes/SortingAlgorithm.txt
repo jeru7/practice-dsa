@@ -1,0 +1,20 @@
+Notes that I will be using on Anki.
+
+What is Sorting Algorithms?
+- Sorting algorithms are techniques used to arrage a collection of items or elements in a specific order, typically ascending or descending, based on some comparison criteria. These algorithms are fundamental in computer science and are employed in various applications such as data analysus, information retrieval, and database management. 
+
+There are several types of sorting algorithms, each with its own approach to sorting and its own performance characteristics. Some common sorting algorithms include:
+
+Bubble Sort: Compares adjacent elements and swaps them if they are in the wrong order, repeating until the list is sorted.
+
+Insertion Sort: Builds the final sorted list one item at a time by repeatedly taking the next item and inserting it into its correct position in the already-sorted portion of the list.
+
+Selection Sort: Divides the input list into a sorted subarray and an unsorted subarray, repeatedly selecting the smallest (or largest) element from the unsorted subarray and swapping it with the first unsorted element to expand the sorted subarray.
+
+Merge Sort: Divides the input list into two halves, recursively sorts each half, and then merges the sorted halves to produce the final sorted list.
+
+Quick Sort: Selects a pivot element, partitions the input list into two subarrays based on the pivot, recursively sorts each subarray, and then combines them to produce the final sorted list.
+
+Heap Sort: Constructs a binary heap from the input list, repeatedly removes the maximum (or minimum) element from the heap and places it at the end of the list, and then reconstructs the heap until the list is sorted.
+
+These sorting algorithms vary in terms of their time complexity, space complexity, stability, and adaptability to different types of input data. The choice of sorting algorithm depends on factors such as the size of the input data, its distribution, and the desired performance characteristics. Each algorithm has its own trade-offs, and selecting the most appropriate one for a given problem or dataset is essential for efficient sorting.
