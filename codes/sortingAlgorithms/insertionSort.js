@@ -5,20 +5,20 @@
 
 function insertionSort(arr) {
   for (let i = 1; i < arr.length; i++) {
-    let first = arr[i]
+    let numChecker = arr[i]
     let j = i - 1
 
-    while (j >= 0 && arr[j] > first) {
+    while (j >= 0 && arr[j] > numChecker) {
       arr[j + 1] = arr[j]
-      j = j - 1
+      j--
     }
 
-    arr[j + 1] = first
+    arr[j + 1] = numChecker
   }
 
   return arr
 }
 
-console.log(insertionSort([-6, 20, 8, -2, 4]))
+console.log(insertionSort([-6, 20, 10, -2, 4]))
 
 // The time complexity is O(n^2)
