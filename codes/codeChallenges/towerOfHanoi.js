@@ -17,3 +17,5 @@ function towerOfHanoi(n, fromRod, toRod, usingRod) {
 }
 
 towerOfHanoi(3, 'A', 'C', 'B')
+
+// Unfortunately I didn't solved this my self since it's too complicated for me. I just copied the code from codevolution's vid, but I did manage to understand it by tracking the code using paper and pen.
