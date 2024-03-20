@@ -17,7 +17,7 @@ function sumOfDigits(num, index = 0) {
 
 console.log(sumOfDigits(1234))
 
-// Above is my solution for the code. I asked chatgpt for the solution and it gives me this:
+// Above is my solution. I asked chatgpt for the solution and it gives me this:
 
 // function sumOfDigits(num) {
 //     // Base case: If the number is a single digit, return the number itself
