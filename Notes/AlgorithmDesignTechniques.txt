@@ -1,0 +1,47 @@
+Algorithm Design Techniques
+
+What is Algorithm Design Techniques?
+- These are the systematic approaches or strategies used to create efficient and effective algorithms for solving various computational problems. These techniques help in designing algorithms that are easy to understand, implement, and analyze. 
+
+Divide and Conquer
+- Break down a problem into smaller subproblems of the same type.
+- Solve each subproblem recursively
+- Combine the solutions of subproblems to solve the original problem.
+- Examples are Merge Sort, Quick Sort, Binary Search.
+
+Dynamic Programming
+- Break down a problem into smaller overlapping subproblems.
+- Solve each subproblem only once and store its resullt for future use (memoization).
+- Build up  solutions to larger subproblems using solutions to smaller subproblems.
+- Examples are Fibonacci sequence calculation, Knapsack problem.
+
+Greedy Algorithms
+- Make a series of choices that are locally optimal at each step.
+- Choose the best possible option at each step without considering the overall future consequences.
+- May not always lead to the globally optimal solution but oftem produces good approximate solutions.
+- Examples are Dijikstra's algorithm for shortest paths, Huffman coding.
+
+Backtracking
+- Explore all possible solutions recursively.
+- Abandon a partial solution as soon as it is determined that it cannot be completed to a valid solution.
+- Useful for problems with a large search space but where not all paths need to be explored fully.
+- Examples are N-Queen problem, Sudoku solver.
+
+Brute Force
+- Generate all possible candidate solutions and systematically check each one to find the best solution.
+- Simple but oftem inefficient for large problem instances due to the exhaustive search.
+- Suitable for small problem sizes or when other techniques are not applicable.
+- Examples are Enumerating all subsets, checking all permutations.
+
+Randomized Algorithms
+- Introduce randomness or probability into the algorithmic decisions.
+- Use random choices to guide the algorithm towards solutions with high probability of correctness or optimality.
+- Often used in optimization problems or scenarios where exact solutions are hard to find deterministically.
+Examples are Randomized Quick Sort, Monte Carlo Algorithms.
+
+Divide and Conquer Optimization Techniques
+- Modify the standard divide and conquer approach to optimize performance or space usage.
+- Examples include Strassen's matrix multiplication algorithm (optimizing matrix multiplication using fewer operations) and Karatsuba algorithm (fast multiplication of large numbers).
+
+NOTE: 
+These algorithm design techniques are not mutually exclusive, and often a combination of techniques may be used to solve complex problems efficiently. Choosing the right technique depends on the problem's characteristics, input size, efficiency requirements, and other factors.
