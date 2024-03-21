@@ -1,0 +1,51 @@
+Data Structures in JavaScript
+
+What is Data Structures?
+- Data Structures are used to organize and store data efficiently, allowing for easy manipulation, access, and management of data within a program.
+
+Types of Data Structures:
+
+Arrays
+- Arrays are ordered collections of data stored at contiguous memory locations. They can hold multiple values of different types and provide methods for adding, removing, and accessing elements based on their index.
+
+Objects
+- Objects in JavaScript are key-value pairs used to store and organize data. They allow access to values based on keys and are highly versatile for representing structured data.
+
+Linked Lists
+- Linked lists are linear data structures composed of nodes, wher eeach node contains a data elementt and a reference (or link) to the next node in the sequence. They are useful for dynamic data storage and efficient insertion/deletion operations.
+
+Stacks
+- A stack is a Last-In-First-Out (LIFO) data structure where elements are added and removed from the same end, called the top of the stack. Common operations include push (add) and pop (remove).
+
+Queues
+- A queue is a First-In-First-Out (FIFO) data structure where elements are added at one end (rear) and removed from the other end (front). Common operations nclude enqueue (add) and dequeue (remove).
+
+Sets 
+- Sets are collections of unique elements with no duplicates values. They are useful for tasks requiring distinct data items.
+
+Maps
+- Maps are store key-value pairs and allow efficient retrieval of values based on keys. WeakMaps are similar but allow garbage collection of keys that are no longer referenced elsewhere in the program.
+
+Trees
+- Trees are hierarchical data structures consisting of nodes connected by edges. Common tree types include binary trees, binary search trees (BST), AVL trees, and more complext variants like heaps and tries.
+
+Graphs
+- Graps represent connections between nodes (vertices)using edges. They are versatile data structures used in network modeling, pathfinding algorithms, social networks, and more.
+
+Hash Tables
+- Hast tables (often implemented using JavaScript Objects) use a hash function to map keys to values, providing fast lookup, insertion, and deletion operations.
+
+Built in Data Structures in JavaScript:
+- Arrays
+- Objects
+- Sets
+- Maps
+
+Custom data structures (User-implemented):
+- Stacks
+- Queues
+- Circular Queues
+- Linked Lists
+- Hash Tables
+- Trees
+- Graphs
