@@ -14,3 +14,5 @@ function findMaxNumber(arr) {
 }
 
 console.log(findMaxNumber([2, 9, 1, 3, 4, 10, 8]))
+
+// The time complexity is O(n)

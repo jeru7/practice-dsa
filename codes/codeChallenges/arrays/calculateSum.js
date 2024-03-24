@@ -13,3 +13,5 @@ function calculateSum(arr) {
 }
 
 console.log(calculateSum([2, 3, 4, 5]))
+
+// The time complexity is O(n)
