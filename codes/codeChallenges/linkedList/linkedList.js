@@ -36,15 +36,34 @@ class LinkedList {
   insertLast(item) {
     let node = new Node(item)
     if (this.isEmpty()) {
-      this.insertFirst(node)
+      this.insertFirst(item)
     } else {
       let prev = this.head
       while (prev.next !== null) {
         prev = prev.next
       }
-      node = prev.next
+      prev.next = node
     }
     this.size++
+  }
+
+  insertAtIndex(item, index) {
+    if (index < 0 || index > this.size) {
+      return 'Invalid index'
+    }
+
+    if (index === 0) {
+      return this.insertFirst(item)
+    } else {
+      let node = new Node(item)
+      let prev = this.head
+      for (let i = 0; i < index - 1; i++) {
+        prev = prev.next
+      }
+      node.next = prev.next
+      prev.next = node
+      this.size++
+    }
   }
 
   deleteFirst() {
