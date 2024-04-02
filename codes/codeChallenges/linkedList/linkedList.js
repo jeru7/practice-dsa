@@ -80,6 +80,26 @@ class LinkedList {
     }
   }
 
+  // deletes the last item of the list
+  deleteLast() {
+    if (this.isEmpty()) {
+      return 'LinkedList is empty'
+    }
+
+    if (this.size === 1) {
+      this.head = null
+      this.size--
+      return
+    }
+
+    let current = this.head
+    for (let i = 0; i < this.size - 1; i++) {
+      current = current.next
+    }
+    current.next = null
+    this.size--
+  }
+
   print() {
     if (this.isEmpty()) {
       console.log('LinkedList is empty')
