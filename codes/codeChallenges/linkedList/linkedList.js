@@ -21,6 +21,8 @@ class LinkedList {
     return this.size
   }
 
+  // inserts an item at the head of the list.
+
   insertFirst(item) {
     let node = new Node(item)
 
@@ -33,6 +35,7 @@ class LinkedList {
     this.size++
   }
 
+  // inserts an item at the end of the list.
   insertLast(item) {
     let node = new Node(item)
     if (this.isEmpty()) {
@@ -47,6 +50,7 @@ class LinkedList {
     this.size++
   }
 
+  // inserts an item at the specified index of the list.
   insertAtIndex(item, index) {
     if (index < 0 || index > this.size) {
       return 'Invalid index'
@@ -66,6 +70,7 @@ class LinkedList {
     }
   }
 
+  // deletes the head of the list
   deleteFirst() {
     if (this.isEmpty()) {
       return 'LinkedList is empty'
@@ -73,5 +78,20 @@ class LinkedList {
       this.head = this.head.next
       this.size--
     }
+  }
+
+  print() {
+    if (this.isEmpty()) {
+      console.log('LinkedList is empty')
+      return
+    }
+
+    let items = ''
+    let current = this.head
+    for (let i = 0; i < this.size; i++) {
+      items += `${current.value} `
+      current = current.next
+    }
+    console.log(items)
   }
 }
