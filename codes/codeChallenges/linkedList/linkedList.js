@@ -123,6 +123,30 @@ class LinkedList {
     this.size--
   }
 
+  deleteValue(value) {
+    if (this.isEmpty()) {
+      return 'LinkedList is empty'
+    }
+
+    if (value === this.head.value) {
+      return this.deleteFirst()
+    } else {
+      let nodeToDel = this.head
+      let prev = null
+      while (nodeToDel) {
+        if (nodeToDel.value === value) {
+          prev.next = nodeToDel.next
+          nodeToDel = null
+          this.size--
+          return
+        }
+        prev = nodeToDel
+        nodeToDel = nodeToDel.next
+      }
+    }
+    console.log("Value doesn't exist in the LinkedList") // should throw error
+  }
+
   print() {
     if (this.isEmpty()) {
       console.log('LinkedList is empty')
@@ -138,13 +162,3 @@ class LinkedList {
     console.log(items)
   }
 }
-
-let linkedList = new LinkedList()
-linkedList.insertFirst(10)
-linkedList.print()
-linkedList.insertFirst(20)
-linkedList.print()
-linkedList.insertFirst(30)
-linkedList.print()
-linkedList.deleteFrom(1)
-linkedList.print()
