@@ -100,6 +100,29 @@ class LinkedList {
     this.size--
   }
 
+  deleteFrom(index) {
+    if (index < 0 || index >= this.size) {
+      return 'Invalid index'
+    }
+
+    if (index === 0) {
+      return this.deleteFirst()
+    } else if (index === this.size - 1) {
+      return this.deleteLast()
+    }
+
+    let nodeToDel = this.head
+    let prev = null
+
+    for (let i = 0; i < index; i++) {
+      prev = nodeToDel
+      nodeToDel = nodeToDel.next
+    }
+    prev.next = nodeToDel.next
+    nodeToDel = null
+    this.size--
+  }
+
   print() {
     if (this.isEmpty()) {
       console.log('LinkedList is empty')
@@ -115,3 +138,13 @@ class LinkedList {
     console.log(items)
   }
 }
+
+let linkedList = new LinkedList()
+linkedList.insertFirst(10)
+linkedList.print()
+linkedList.insertFirst(20)
+linkedList.print()
+linkedList.insertFirst(30)
+linkedList.print()
+linkedList.deleteFrom(1)
+linkedList.print()
