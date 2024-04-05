@@ -149,6 +149,23 @@ class LinkedList {
     console.log("Value doesn't exist in the LinkedList") // should throw error
   }
 
+  // reverses the linkedlist
+  reverse() {
+    if (this.isEmpty()) {
+      return 'LinkedList is empty'
+    }
+
+    let prev = null
+    let curr = this.head
+    while (curr) {
+      let next = curr.next
+      curr.next = prev
+      prev = curr
+      curr = next
+    }
+    this.head = prev
+  }
+
   // returns the index of the node based on the specified value
   search(value) {
     if (this.isEmpty()) {
@@ -187,3 +204,11 @@ class LinkedList {
     console.log(items)
   }
 }
+
+let list = new LinkedList()
+list.insertFirst(10)
+list.insertFirst(20)
+list.insertFirst(30)
+list.print()
+list.reverse()
+list.print()
