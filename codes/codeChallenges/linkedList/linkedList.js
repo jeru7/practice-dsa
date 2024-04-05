@@ -100,6 +100,7 @@ class LinkedList {
     this.size--
   }
 
+  // deletes the node based on the specified index
   deleteFrom(index) {
     if (index < 0 || index >= this.size) {
       return 'Invalid index'
@@ -123,6 +124,7 @@ class LinkedList {
     this.size--
   }
 
+  // deletes the node based on the specified value
   deleteValue(value) {
     if (this.isEmpty()) {
       return 'LinkedList is empty'
@@ -147,6 +149,29 @@ class LinkedList {
     console.log("Value doesn't exist in the LinkedList") // should throw error
   }
 
+  // returns the index of the node based on the specified value
+  search(value) {
+    if (this.isEmpty()) {
+      return -1
+    }
+
+    if (value === this.head.value) {
+      return 0
+    }
+
+    let current = this.head
+    let index = 0
+    while (current.next !== null) {
+      if (current.value === value) {
+        return index
+      }
+      current = current.next
+      index++
+    }
+    return -1
+  }
+
+  // prints the linkedlist
   print() {
     if (this.isEmpty()) {
       console.log('LinkedList is empty')
