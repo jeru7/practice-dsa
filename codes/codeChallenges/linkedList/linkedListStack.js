@@ -50,6 +50,14 @@ class LinkedList {
     }
   }
 
+  peek() {
+    if (this.isEmpty()) {
+      return 'Stack is empty'
+    } else {
+      return this.head.value
+    }
+  }
+
   print() {
     if (this.isEmpty()) {
       return 'stack is empty'
