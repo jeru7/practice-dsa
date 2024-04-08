@@ -44,6 +44,10 @@ class LinkedList {
       this.head = this.head.next
     }
     this.size--
+
+    if (this.isEmpty()) {
+      this.tail = null
+    }
   }
 
   print() {
