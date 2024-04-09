@@ -52,6 +52,13 @@ class LinkedListQueue {
     this.size--
   }
 
+  peek() {
+    if (this.isEmpty()) {
+      return null
+    }
+    return this.head.value
+  }
+
   print() {
     if (this.isEmpty()) {
       return console.log('Queue is empty')
@@ -66,11 +73,3 @@ class LinkedListQueue {
     }
   }
 }
-
-let list = new LinkedListQueue()
-list.enqueue(10)
-list.enqueue(20)
-list.enqueue(30)
-list.dequeue()
-list.print()
-console.log(list.getSize())
