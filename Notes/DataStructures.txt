@@ -33,7 +33,7 @@ Graphs
 - Graps represent connections between nodes (vertices)using edges. They are versatile data structures used in network modeling, pathfinding algorithms, social networks, and more.
 
 Hash Tables
-- Hast tables (often implemented using JavaScript Objects) use a hash function to map keys to values, providing fast lookup, insertion, and deletion operations.
+- Hash tables (often implemented using JavaScript Objects) use a hash function to map keys to values, providing fast lookup, insertion, and deletion operations.
 
 Built in Data Structures in JavaScript:
 - Arrays
