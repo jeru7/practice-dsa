@@ -5,6 +5,7 @@
 class TreeNode {
   constructor(value) {
     this.value = value
+    this.parent = null
     this.children = []
   }
 
@@ -17,6 +18,14 @@ class TreeNode {
 
   isLeaf() {
     return this.children.length === 0
+  }
+
+  isRoot() {
+    if (this.parent) {
+      return false
+    }
+
+    return true
   }
 
   siblings() {
@@ -34,6 +43,14 @@ class TreeNode {
 
     return nodeSiblings
   }
+
+  degree() {
+    return this.children.length
+  }
+
+  getParent() {
+    return this.parent.value
+  }
 }
 
 class Tree {
@@ -46,3 +63,23 @@ class Tree {
     return this.root
   }
 }
+
+const tree = new Tree()
+
+const rootNode = new TreeNode(1)
+tree.addRoot(rootNode)
+
+const child1 = rootNode.addChild(2)
+const child2 = rootNode.addChild(3)
+const child3 = rootNode.addChild(4)
+
+const grandChild1 = child1.addChild(5)
+const grandChild2 = child1.addChild(6)
+
+console.log('rootNode siblings: ', rootNode.siblings())
+console.log('siblings of child1: ', child1.siblings())
+console.log('siblings of child2 ', child2.siblings())
+console.log('siblings of grandChild1: ', grandChild1.siblings())
+console.log('parent of grandChild1: ', grandChild1.getParent())
+console.log('degree of child1: ', child1.degree())
+console.log(child1.isRoot())
