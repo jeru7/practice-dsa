@@ -22,18 +22,12 @@ class TreeNode {
   }
 
   addChild(value) {
-    if (value <= this.value) {
-      if (!this.left) {
-        return (this.left = new TreeNode(value))
-      } else {
-        return this.left.addChild(value)
-      }
+    if (!this.left) {
+      return (this.left = new TreeNode(value))
+    } else if (!this.right) {
+      return (this.right = new TreeNode(value))
     } else {
-      if (!this.right) {
-        return (this.right = new TreeNode(value))
-      } else {
-        return this.right.addChild(value)
-      }
+      return this.left.addChild(value)
     }
   }
 }
