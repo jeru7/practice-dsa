@@ -22,7 +22,7 @@ class TreeNode {
 
   isRoot() {
     if (this.parent) {
-      return false
+      return falsea
     }
 
     return true
