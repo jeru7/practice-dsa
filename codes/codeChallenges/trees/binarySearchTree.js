@@ -1,4 +1,4 @@
-class TreeNode {
+class Node {
   constructor(value) {
     this.value = value
     this.right = null
@@ -20,7 +20,7 @@ class BinarySearchTree {
   }
 
   insert(value) {
-    let node = new TreeNode(value)
+    let node = new Node(value)
     if (!this.root) {
       this.root = node
     } else {
