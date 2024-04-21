@@ -5,32 +5,12 @@ class TreeNode {
     this.left = null
   }
 
-  isRoot() {
-    return !this.parent
-  }
-
   isLeaf() {
     return !this.right && !this.left
   }
 
   isInternal() {
     return !this.isLeaf()
-  }
-
-  addChild(value) {
-    if (value <= this.value) {
-      if (!this.left) {
-        return (this.left = new TreeNode(value))
-      } else {
-        return this.left.addChild(value)
-      }
-    } else {
-      if (!this.right) {
-        return (this.right = new TreeNode(value))
-      } else {
-        return this.right.addChild(value)
-      }
-    }
   }
 }
 
@@ -39,13 +19,29 @@ class BinarySearchTree {
     this.root = null
   }
 
-  addRoot(value) {
-    if (this.root) {
-      console.log('Root already exists')
-      return
+  insert(value) {
+    let node = new TreeNode(value)
+    if (!this.root) {
+      this.root = node
+    } else {
+      return this.insertNode(this.root, node)
     }
-    this.root = new TreeNode(value)
-    return this.root
+  }
+
+  insertNode(parent, child) {
+    if (child.value <= parent.value) {
+      if (!parent.left) {
+        parent.left = child
+      } else {
+        return this.insertNode(parent.left, child)
+      }
+    } else {
+      if (!parent.right) {
+        parent.right = child
+      } else {
+        return this.insertNode(parent.right, child)
+      }
+    }
   }
 
   search(root, value) {
